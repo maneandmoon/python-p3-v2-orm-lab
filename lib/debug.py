@@ -26,6 +26,9 @@ def reset_database():
     Review.create(2022, "Good work ethic", employee1.id)
     Review.create(2023, "Excellent communication skills", employee2.id)
 
+    employee3 = Employee.create("Bob", "Assistant Manager", payroll.id)
+    Review.create(2022, "Speaks his mind", employee3.id)
+
 
 reset_database()
 ipdb.set_trace()
